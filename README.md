@@ -9,6 +9,7 @@ Solitaire
 <!-- Rules -->
 :memo:
 **What is Solitaire**
+
 Solitaire is a card game that you play by yourself. You only need a standard deck of 52 cards to play, so it's a great game to play when traveling alone or just when you are bored and want something to do. 
 
 The first thing to do is deal out the cards into five columns. The first column on the left has one card, the second column has two cards, the third has three cards. This continues for the rest of the five columns including five cards in the fifth column. The top card in each column is turned face up, the rest of the cards are face down. 
