@@ -57,6 +57,7 @@ var deck = [
 	{name:"ace of spades",image:"ace_of_spades.png"}
 ]
 
+shiffledDeck.shuffle(deck);
 
 // var waste = {
 
