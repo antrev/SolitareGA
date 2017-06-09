@@ -12,7 +12,7 @@ button {
 }
 
 
-/*.land{
+/*land{
 	background: url("images/background.jpg") no-repeat center center fixed ;
 	background-size: cover;	
 	position: absolute;
@@ -42,78 +42,136 @@ button {
     height: 100%;
     z-index: 1;
 }
-/*START DECK*/
-.start_deck{
 
+
+/*START DECK*/
+
+.start_deck {
+    position: fixed;
+    margin:-1%;
+    bottom: 65vh;
+    left: 5%;
+    box-shadow:10px 10px black;
 }
+
+.waste {
+    position: fixed;
+    margin: 1%;
+    left: 18%;
+    top: 5vh;
+    box-shadow:10px 10px black;
+}
+
 
 /*FOUNDATION PILE*/
 
 #foundation {
     display: flex;
     justify-content: flex-end;
-    flex-
 }
 
 #hearts {
-    background-color: blue;
-    width: 50px;
-    height: 50px;
+    background-color: transparent;
+    margin: 10px;
+    width: 13vw;
+    height: 30vh;
+    box-shadow:10px 10px black;
 }
 
 #diamonds {
-    background-color: yellow;
-    width: 50px;
-    height: 50px;
+    background-color: transparent;
+    margin: 10px;
+    width: 13vw;
+    height: 30vh;
+    box-shadow:10px 10px black;
 }
 
 #spades {
-    background-color: aqua;
-    width: 50px;
-    height: 50px;
+    background-color: transparent;
+    margin: 10px;
+    width: 13vw;
+    height: 30vh;
+    box-shadow:10px 10px black;
 }
 
 #clubs {
-    background-color: grey;
-    width: 50px;
-    height: 50px;
+    background-color: transparent;
+    margin: 10px;
+    width: 13vw;
+    height: 30vh;
+    box-shadow:10px 10px black;
 }
 
 
 /*PILE*/
-.pile{
-	display: flex;
-	justify-content: space-around;
+
+.pile {
+    display: flex;
+    position: relative;
+    top: 29%;
+    justify-content: space-around;
 }
 
-
 #colOne {
-    background-color: grey;
+	position: relative;
+    background-color: transparent;
     width: 13vw;
     height: 30vh;
+    box-shadow:10px 10px black;
 }
 
 #colTwo {
-    background-color: grey;
+	position: relative;
+    background-color: transparent;
     width: 13vw;
     height: 30vh;
+    box-shadow:10px 10px black;
 }
 
 #colThree {
-    background-color: grey;
+	position: relative;
+    background-color: transparent;
     width: 13vw;
     height: 30vh;
+    box-shadow:10px 10px black;
 }
 
 #colFour {
-    background-color: grey;
+	position: relative;
+    background-color: transparent;
     width: 13vw;
     height: 30vh;
-}
-#colFive{
-	background-color: grey;
-    width: 13vw;
-    height: 30vh;
+    box-shadow:10px 10px black;
 }
 
+#colFive {
+	position: relative;
+    background-color: transparent;
+    width: 13vw;
+    height: 30vh;
+    box-shadow:10px 10px black;
+}
+/* INFO */
+.info{
+	display: flex;
+	justify-content: center;
+}
+
+#name{
+display: flex;
+justify-content: center;
+background-color: grey;
+}
+#time{
+display: flex;
+background-color: grey;
+}
+#moves{
+display: flex;
+background-color: grey;
+}
+#score{
+display: flex;
+background-color: grey;
+}
 @media screen {}

@@ -95,7 +95,7 @@ $(function() {
             cards[j] = temp
         }
         shuffledDeck = deck;
-        	
+
         return temp;
     }
 
@@ -130,16 +130,14 @@ $(function() {
             $('.start_deck').append(newCard);
         });
     });
-
+    // Distributes the shuffled cards onto the field //
     function distribute() {
         for (var i = 0; i < pile.length; i++) {
             for (var a = 0; a < pile[i].length; a++) {
                 pile[i][a] = shuffledDeck[0]
                 shuffledDeck.shift();
-                console.log("shuffled deck", shuffledDeck);
-                console.log('pile', pile);
             }
-        } 
+        }
     }
 
     // waste pile //
@@ -155,24 +153,22 @@ $(function() {
 
     //////// START DECK ////////////
 
-    $('.start_deck').click('click', function() {
-        var click = true
-        if (click === true) {
-            $('.waste').hide('.start_deck');
+    $('.start_deck').on('click', function() {
+        for (var i = 0; i < shuffledDeck.length; i++) {
+return waste.shift();
         }
-
     })
 
 
     //////// PILE /////////////////
 
     // moves the cards from waste to pile //
-    $('.waste').click('click', function(m) {
+    $('.waste').on('click', function(m) {
         console.log('moved')
-        $('#colOne').mousemove();
-        $('#colTwo').mousemove();
-        $('#colThree').mousemove();
-        $('#colFour').mousemove();
+        $('#colOne').on();
+        $('#colTwo').on();
+        $('#colThree').on();
+        $('#colFour').on();
     })
 
 
@@ -192,7 +188,7 @@ $(function() {
         display: 'inline-block',
         width: '13vw',
         height: '30vh',
-        backgroundColor: 'black',
+        backgroundColor: 'transparent',
         boxSize: 'content-box'
     })
 
@@ -205,26 +201,15 @@ $(function() {
     })
 
     $('.reset').css({
-        position: 'fixed',
-        top: '24vw',
+        position: 'relative',
+        bottom: '28vh',
         width: '8vw',
         height: '3vw',
         fontWeight: '800',
         fontSize: '100%',
         color: 'red'
     })
-    $('#hearts').css({
-
-    })
-    $('#diamonds').css({
-
-    })
-    $('#spades').css({
-
-    })
-    $('#clubs').css({
-
-    })
+    
 
 
 
