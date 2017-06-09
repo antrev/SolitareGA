@@ -47,7 +47,7 @@ button {
 /*START DECK*/
 
 .start_deck {
-    position: fixed;
+    position: absolute;
     margin:-1%;
     bottom: 65vh;
     left: 5%;
@@ -55,7 +55,7 @@ button {
 }
 
 .waste {
-    position: fixed;
+    position: absolute;
     margin: 1%;
     left: 18%;
     top: 5vh;
@@ -149,7 +149,7 @@ button {
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px black;
+	box-shadow:10px 10px black;
 }
 /* INFO */
 .info{

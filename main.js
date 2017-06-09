@@ -56,7 +56,11 @@ $(function() {
             { name: "ace of hearts", image: "playing cards/png-cards-1.3/ace_of_hearts.png" },
             { name: "ace of spades", image: "playing cards/png-cards-1.3/ace_of_spades.png" }
         ]
-        // waste pale //
+        // Shuffled Deck //
+    var shuffledDeck = "";
+    // image array //
+    var imgArr = shuffledDeck;
+    // waste pale //
     var waste = []
 
     // holds the top 4 divs //
@@ -74,8 +78,8 @@ $(function() {
         ['', '', '', ''],
         ['', '', '', '', '']
     ];
-
-    var shuffledDeck = "";
+    var waste = "";
+    var dragged = "";
 
     //counts the move
     // var moveCounter =
@@ -110,8 +114,9 @@ $(function() {
     $('.solitaire').append("<button class='reset'/>");
     $('.reset').html('reset');
     $('.reset').on('click', function() {
-        $('.start_deck').empty();
+    $('.start_deck').empty();
         shuffle(deck);
+    $('.waste').append($('<img  width="13vw" height="30vh" />'));    
         distribute();
     });
 
@@ -125,7 +130,7 @@ $(function() {
     $(".solitaire").append("<div class='start_deck' >");
     $('.reset').click('click', function() {
         deck.forEach(function(nc) {
-            var newCard = $('<img  width="13vw" height="30vh"/>');
+            var newCard = $('<img  width="13vw" height="30vh" />');
             newCard.attr('src', nc.image);
             $('.start_deck').append(newCard);
         });
@@ -139,10 +144,23 @@ $(function() {
             }
         }
     }
+    // adds images from waste to pile //
+    $('.waste').on('click', function() {
+        $("#colOne").append('<img  width="13vw" height="30vh"/>');
+        $("#colTwo").append('<img  width="13vw" height="30vh"/>');
+        $("#colThree").append('<img  width="13vw" height="30vh"/>');
+        $("#colFour").append('<img  width="13vw" height="30vh"/>');
+        $("#colFive").append('<img  width="13vw" height="30vh"/>');
+    });
 
+    // add images to waste //
+    // $('.start_deck').on('click',function(){
+    	 
+    // 	 $('.waste').attr('src',c.image);
+    // 	 $('.waste').append()
+    //          })
     // waste pile //
-    $('.solitaire').append('<div class="waste" />');
-
+$('.solitaire').append('<div class="waste"</div>')
 
 
     // foundation //
@@ -153,28 +171,37 @@ $(function() {
 
     //////// START DECK ////////////
 
-    $('.start_deck').on('click', function() {
-        for (var i = 0; i < shuffledDeck.length; i++) {
-return waste.shift();
-        }
-    })
+    // $('.start_deck').on('click', function() {
+    //     for (var i = 0; i < shuffledDeck.length; i++) {
+    //         return waste.shift();
+    //     }
+    // })
 
 
     //////// PILE /////////////////
 
     // moves the cards from waste to pile //
-    $('.waste').on('click', function(m) {
-        console.log('moved')
-        $('#colOne').on();
-        $('#colTwo').on();
-        $('#colThree').on();
-        $('#colFour').on();
+    $('.waste').on('drag', function() {
+        console.log('clicked');
+        $('#colOne').drag('drop', function() {
+
+        });
+        $('#colTwo').drag('drop', function() {
+
+        });
+        $('#colThree').drag('drop', function() {
+
+        });
+        $('#colFour').drag('drop', function() {
+
+        });
     })
 
 
     ////// LOGIC //////
+    // $('.pile').trigger('click', function() {
 
-
+    // })
 
     // check for win //
     function checkForWin() {
@@ -194,22 +221,20 @@ return waste.shift();
 
     $('.waste').css({
         display: 'inline-block',
-        position: 'absolute',
         width: '13vw',
         height: '30vh',
-        backgroundColor: 'green'
     })
 
     $('.reset').css({
         position: 'relative',
-        bottom: '28vh',
+        bottom: '26vh',
         width: '8vw',
         height: '3vw',
         fontWeight: '800',
         fontSize: '100%',
         color: 'red'
     })
-    
+
 
 
 
