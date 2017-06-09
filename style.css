@@ -1,13 +1,16 @@
-body{
-	margin:0;
+body {
+    margin: 0;
 }
-input{
-	background-color:transparent;
+
+input {
+    background-color: transparent;
 }
-button{
-	background-color: transparent;
-	font-weight: 800;
+
+button {
+    background-color: transparent;
+    font-weight: 800;
 }
+
 
 .land{
 	background: url("images/background.jpg") no-repeat center center fixed ;
@@ -18,6 +21,8 @@ button{
 	width: 100%;
 	height: 100%;
 	z-index: 2;
+
+
 }
 .login{
 	position: relative;
@@ -28,15 +33,72 @@ button{
 #dev{
 	color:orange;
 }
-.solitaire{
-	background: url("images/movingbg.gif") no-repeat center center fixed;
-	background-size: cover;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index:1;
+
+.solitaire {
+    background: url("images/movingbg.gif") no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
-@media screen {
-	
+
+/*foundation pile*/
+
+#foundation {
+    float: right;
 }
+
+#hearts {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+
+#diamonds {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+}
+
+#spades {
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+}
+
+#clubs {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+}
+
+
+/*PILE*/
+
+#colOne {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+}
+
+#colTwo {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+}
+
+#colThree {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+}
+
+#colFour {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen {}
