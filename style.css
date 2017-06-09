@@ -12,7 +12,7 @@ button {
 }
 
 
-.land{
+/*.land{
 	background: url("images/background.jpg") no-repeat center center fixed ;
 	background-size: cover;	
 	position: absolute;
@@ -32,7 +32,7 @@ button {
 }
 #dev{
 	color:orange;
-}
+}*/
 
 .solitaire {
     background: url("images/movingbg.gif") no-repeat center center fixed;
@@ -42,12 +42,17 @@ button {
     height: 100%;
     z-index: 1;
 }
+/*START DECK*/
+.start_deck{
 
+}
 
-/*foundation pile*/
+/*FOUNDATION PILE*/
 
 #foundation {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-
 }
 
 #hearts {
@@ -76,29 +81,39 @@ button {
 
 
 /*PILE*/
+.pile{
+	display: flex;
+	justify-content: space-around;
+}
+
 
 #colOne {
     background-color: grey;
-    width: 50px;
-    height: 50px;
+    width: 13vw;
+    height: 30vh;
 }
 
 #colTwo {
     background-color: grey;
-    width: 50px;
-    height: 50px;
+    width: 13vw;
+    height: 30vh;
 }
 
 #colThree {
     background-color: grey;
-    width: 50px;
-    height: 50px;
+    width: 13vw;
+    height: 30vh;
 }
 
 #colFour {
     background-color: grey;
-    width: 50px;
-    height: 50px;
+    width: 13vw;
+    height: 30vh;
+}
+#colFive{
+	background-color: grey;
+    width: 13vw;
+    height: 30vh;
 }
 
 @media screen {}
