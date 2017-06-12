@@ -2,17 +2,18 @@ body {
     margin: 0;
 }
 
-input {
+input{
     background-color: transparent;
 }
 
-button {
+}
+#play {
     background-color: transparent;
     font-weight: 800;
 }
 
 
-/*land{
+.land{
 	background: url("images/background.jpg") no-repeat center center fixed ;
 	background-size: cover;	
 	position: absolute;
@@ -32,7 +33,7 @@ button {
 }
 #dev{
 	color:orange;
-}*/
+}
 
 .solitaire {
     background: url("images/movingbg.gif") no-repeat center center fixed;
@@ -51,7 +52,7 @@ button {
     margin:-1%;
     bottom: 65vh;
     left: 5%;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 .waste {
@@ -59,7 +60,7 @@ button {
     margin: 1%;
     left: 18%;
     top: 5vh;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 
@@ -75,7 +76,7 @@ button {
     margin: 10px;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 #diamonds {
@@ -83,7 +84,7 @@ button {
     margin: 10px;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 #spades {
@@ -91,7 +92,7 @@ button {
     margin: 10px;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 #clubs {
@@ -99,7 +100,7 @@ button {
     margin: 10px;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 
@@ -117,7 +118,7 @@ button {
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 #colTwo {
@@ -125,7 +126,7 @@ button {
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 #colThree {
@@ -133,7 +134,7 @@ button {
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 #colFour {
@@ -141,7 +142,7 @@ button {
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px black;
+    box-shadow:10px 10px grey;
 }
 
 #colFive {
@@ -149,7 +150,7 @@ button {
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-	box-shadow:10px 10px black;
+	box-shadow:10px 10px grey;
 }
 /* INFO */
 .info{
@@ -159,19 +160,29 @@ button {
 
 #name{
 display: flex;
-justify-content: center;
-background-color: grey;
+border-radius: 10px;
+margin: 10px;
+background-color: transparent;
+box-shadow:5px 5px skyblue;
 }
 #time{
 display: flex;
-background-color: grey;
+border-radius: 10px;
+margin: 10px;
+background-color: transparent;
+box-shadow:5px 5px skyblue;
 }
 #moves{
 display: flex;
-background-color: grey;
+margin: 10px;
+background-color: transparent;
+box-shadow:5px 5px skyblue;
 }
 #score{
 display: flex;
-background-color: grey;
+border-radius: 10px;
+margin: 10px;
+background-color: transparent;
+box-shadow:5px 5px skyblue;
 }
 @media screen {}
