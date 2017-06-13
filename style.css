@@ -2,8 +2,19 @@ body {
     margin: 0;
 }
 
-input{
+input {
     background-color: transparent;
+}
+
+#x {
+    display: block;
+    position: relative;
+    left: 40%;
+    padding: 10px;
+    bottom: 2px;
+    height: 5px;
+    width: 5px;
+    color: red;
 }
 
 .deck {
@@ -15,33 +26,38 @@ input{
     width: 10%;
 }
 
+#rules {
+    display: none;
+    height: 25vh;
+    width: 25vw;
+    overflow: overlay;
+}
 
 #play {
     background-color: transparent;
     font-weight: 800;
 }
 
-
-.land{
-	background: url("images/background.jpg") no-repeat center center fixed ;
-	background-size: cover;	
-	position: absolute;
-	font-weight: 800;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	z-index: 2;
-
-
+.land {
+    background: url("images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
-.login{
-	position: relative;
-	background-color:transparent;
-	top:30vw;
-	left: 5vw;
+
+.login {
+    position: relative;
+    background-color: transparent;
+    top: 30vw;
+    left: 5vw;
 }
-#dev{
-	color:orange;
+
+#dev {
+    color: orange;
 }
 
 .solitaire {
@@ -58,10 +74,10 @@ input{
 
 .start_deck {
     position: absolute;
-    margin:-1%;
+    margin: -1%;
     bottom: 65vh;
     left: 5%;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 .waste {
@@ -69,7 +85,7 @@ input{
     margin: 1%;
     left: 18%;
     top: 5vh;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 
@@ -85,7 +101,7 @@ input{
     margin: 10px;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 #diamonds {
@@ -93,7 +109,7 @@ input{
     margin: 10px;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 #spades {
@@ -101,7 +117,7 @@ input{
     margin: 10px;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 #clubs {
@@ -109,7 +125,7 @@ input{
     margin: 10px;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 
@@ -123,75 +139,82 @@ input{
 }
 
 #colOne {
-	position: relative;
+    position: relative;
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 #colTwo {
-	position: relative;
+    position: relative;
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 #colThree {
-	position: relative;
+    position: relative;
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 #colFour {
-	position: relative;
+    position: relative;
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-    box-shadow:10px 10px grey;
+    box-shadow: 10px 10px grey;
 }
 
 #colFive {
-	position: relative;
+    position: relative;
     background-color: transparent;
     width: 13vw;
     height: 30vh;
-	box-shadow:10px 10px grey;
-}
-/* INFO */
-.info{
-	display: flex;
-	justify-content: center;
+    box-shadow: 10px 10px grey;
 }
 
-#name{
-display: flex;
-border-radius: 10px;
-margin: 10px;
-background-color: transparent;
-box-shadow:5px 5px skyblue;
+
+/* INFO */
+
+.info {
+    display: flex;
+    justify-content: center;
 }
-#time{
-display: flex;
-border-radius: 10px;
-margin: 10px;
-background-color: transparent;
-box-shadow:5px 5px skyblue;
+
+#name {
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: transparent;
+    box-shadow: 5px 5px skyblue;
 }
-#moves{
-display: flex;
-margin: 10px;
-background-color: transparent;
-box-shadow:5px 5px skyblue;
+
+#time {
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: transparent;
+    box-shadow: 5px 5px skyblue;
 }
-#score{
-display: flex;
-border-radius: 10px;
-margin: 10px;
-background-color: transparent;
-box-shadow:5px 5px skyblue;
+
+#moves {
+    display: flex;
+    margin: 10px;
+    background-color: transparent;
+    box-shadow: 5px 5px skyblue;
 }
+
+#score {
+    display: flex;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: transparent;
+    box-shadow: 5px 5px skyblue;
+}
+
 @media screen {}
